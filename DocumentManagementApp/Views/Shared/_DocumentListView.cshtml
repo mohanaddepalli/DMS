@@ -1,0 +1,15 @@
+﻿@model IEnumerable<DocumentManagementApp.Models.DocumentModel>
+<table class="table table-bordered table-responsive table-hover">
+  <tr>
+    <th>File Name </th>
+    <th>View/Download</th>
+  </tr>
+  @foreach (var d in Model)
+  {
+    <tr>
+      <td>@d.FileName</td>
+      <td>@Html.ActionLink("Download", "DownloadFile", new { fileName = d.FileName })</td>
+    </tr>
+
+  }
+</table>
