@@ -1,9 +1,5 @@
-﻿using DocumentManagementDAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using DocumentManagementBLL;
+using DocumentManagementDAL;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -11,6 +7,12 @@ namespace DocumentManagmentApi.Controllers
 {
   public class DocumentController : ApiController
   {
+    private IDocumentService _DocumentService;
+    public DocumentController(IDocumentService documentService)
+    {
+      _DocumentService = documentService;
+    }
+
     /// <summary>
     /// 
     /// </summary>
@@ -20,8 +22,7 @@ namespace DocumentManagmentApi.Controllers
     [Route("user/{userId}/documents")]
     public async Task<IHttpActionResult> GetAsync(int userId)
     {
-      var documentRepository = new DocumentRepository();
-      var documents= await documentRepository.GetDocumentByUserId(userId);
+      var documents= await _DocumentService.GetDocumentByUserId(userId);
       return Ok(documents);
     }
 
@@ -29,8 +30,7 @@ namespace DocumentManagmentApi.Controllers
     [Route("user/document")]
     public async Task<IHttpActionResult> PostAync(Document document)
     {
-      var documentRepository = new DocumentRepository();
-      await documentRepository.SaveDocument(document);
+      await _DocumentService.SaveDocument(document);
       return Ok();
     }
   }

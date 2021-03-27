@@ -1,8 +1,6 @@
-﻿using DocumentManagementDAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using DocumentManagementApp.ClientServices;
+using DocumentManagementDAL;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
 namespace DocumentManagementApp.Controllers
@@ -16,12 +14,12 @@ namespace DocumentManagementApp.Controllers
     }
 
     [HttpPost]
-    public ActionResult Login(string username, string password)
+    public async Task<ActionResult> Login(string username, string password)
     {
       if (ModelState.IsValid)
       {
-        var userRepo = new UserRepository();
-        var user = userRepo.ValidateUser(username, password);
+        var userClientService = new UserClientService();
+        var user = await userClientService.ValidateUser(username, password);
         if (user != null)
         {
           Session["UserId"] = user.UserId;

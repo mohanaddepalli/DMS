@@ -18,6 +18,7 @@ namespace DocumentManagmentApi
       FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
+      AutofacWebapiConfig.Initialize(GlobalConfiguration.Configuration);
     }
   }
 }

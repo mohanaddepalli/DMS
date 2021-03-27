@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading.Tasks;
 
 namespace DocumentManagementDAL
 {
-  public class UserRepository 
+  public class UserRepository : IUserRepository
   {
-    public User ValidateUser(string userName, string  password)
+    public async Task<User> ValidateUser(string userName, string password)
     {
-      using (var db=new DMSEntities())
+      using (var context = new DMSEntities())
       {
-        var user = (from x in db.Users
-                      where x.LoginName == userName && x.Password == password
-                      select x).FirstOrDefault();
+        context.Configuration.ProxyCreationEnabled = false;
+        var user = context.Users.Where(x => x.LoginName == userName && x.Password == password).FirstOrDefault();
 
         return user;
       }

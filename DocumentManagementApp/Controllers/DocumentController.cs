@@ -1,5 +1,5 @@
 ﻿using DocumentManagementApp.Filters;
-using DocumentManagementApp.Services;
+using DocumentManagementApp.ClientServices;
 using DocumentManagementDAL;
 using System;
 using System.IO;
@@ -20,7 +20,7 @@ namespace DocumentManagementApp.Controllers
 
     public async Task<ActionResult> DocumentList()
     {
-      DocumentService documentService = new DocumentService();
+      DocumentClientService documentService = new DocumentClientService();
       var docs = await documentService.GetDocuments(Session["UserId"].ToString());
       return PartialView("_DocumentListView", docs);
     }
@@ -67,7 +67,7 @@ namespace DocumentManagementApp.Controllers
             document.StatusId = 1;
             document.LastModifiedTimestamp = DateTime.UtcNow;
             document.UserId = Convert.ToInt16(Session["UserId"]);
-            DocumentService documentService = new DocumentService();
+            DocumentClientService documentService = new DocumentClientService();
             ViewBag.StatusCode = await documentService.CreateDocument(document);
           }
           // Returns message that successfully uploaded  

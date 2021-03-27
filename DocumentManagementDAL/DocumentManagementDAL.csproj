@@ -51,58 +51,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseRepository.cs" />
-    <Compile Include="Document.cs">
-      <DependentUpon>DocumentManagement.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentManagement.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DocumentManagement.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentManagement.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DocumentManagement.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DocumentManagement.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DocumentManagement.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="DMSDBInitializer.cs" />
+    <Compile Include="DMSEntities.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="IDocumentRepository.cs" />
+    <Compile Include="IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Status.cs">
-      <DependentUpon>DocumentManagement.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>DocumentManagement.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Status.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="UserRepository.cs" />
     <Compile Include="DocumentRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="DocumentManagement.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DocumentManagement.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="DocumentManagement.edmx.diagram">
-      <DependentUpon>DocumentManagement.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DocumentManagement.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DocumentManagement.Context.cs</LastGenOutput>
-      <DependentUpon>DocumentManagement.edmx</DependentUpon>
-    </Content>
-    <Content Include="DocumentManagement.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DocumentManagement.edmx</DependentUpon>
-      <LastGenOutput>DocumentManagement.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

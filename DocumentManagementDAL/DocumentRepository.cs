@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DocumentManagementDAL
 {
-  public class DocumentRepository
+  public class DocumentRepository : IDocumentRepository
   {
     public async Task SaveDocument(Document document)
     {
