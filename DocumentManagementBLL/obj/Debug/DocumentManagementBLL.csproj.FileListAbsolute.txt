@@ -1,0 +1,12 @@
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\DocumentManagementBLL.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\DocumentManagementBLL.pdb
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\DocumentManagementDAL.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\EntityFramework.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\DocumentManagementDAL.pdb
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\DocumentManagementDAL.dll.config
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\bin\Debug\EntityFramework.xml
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\obj\Debug\DocumentManagementBLL.csprojAssemblyReference.cache
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\obj\Debug\DocumentManagementBLL.csproj.CoreCompileInputs.cache
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\obj\Debug\DocumentManagementBLL.csproj.CopyComplete
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\obj\Debug\DocumentManagementBLL.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementBLL\obj\Debug\DocumentManagementBLL.pdb

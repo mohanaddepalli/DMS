@@ -1,0 +1,11 @@
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\DocumentManagementDAL.dll.config
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\DocumentManagementDAL.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\DocumentManagementDAL.pdb
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\EntityFramework.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\EntityFramework.xml
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\obj\Debug\DocumentManagementDAL.csproj.CoreCompileInputs.cache
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\obj\Debug\DocumentManagementDAL.csproj.CopyComplete
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\obj\Debug\DocumentManagementDAL.dll
+C:\Mohan\DocumentManagementApp\DMS\DocumentManagementDAL\obj\Debug\DocumentManagementDAL.pdb
